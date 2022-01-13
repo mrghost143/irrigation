@@ -1,0 +1,85 @@
+header{
+    width: 100%;
+    height: calc(100vh - 85px);
+    position: relative;
+    background-color: white;
+
+    .container{
+            width: 100%;
+            height: calc(100% - 40px);
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            position: relative;
+
+
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 2;
+
+            }
+            .hero_heading{
+                margin: 0 0 100px 100px;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                z-index: 3;
+                    h1{
+                        height: 64px;
+                        width: 200px;
+                        font-size: 42px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 10px;
+                        background-color: $primaryGreen;
+                        color:$whiteColor;
+                        font-family: $primaryFont;
+                        margin-bottom: 5px;
+                    }
+                    h2{
+                        height: 70px;
+                        width: 520px;
+                        font-size: 36px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 10px;
+                        background-color: $primaryGreen;
+                        color:$whiteColor;
+                        font-family: $primaryFont;
+                        margin-bottom: 30px;
+
+                    }
+                    button{
+                        width: 180px;
+                        height: 50px;
+                        border: none;
+                        font-size:22px;
+                        font-family: $primaryFont;
+
+                    }
+
+                        }
+    }
+    .hero_icon{
+        @include equal(80px);
+        background-color: $primaryGreen;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       
+
+    }
+   
+}
