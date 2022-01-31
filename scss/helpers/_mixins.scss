@@ -1,0 +1,22 @@
+@mixin flex($justify,$align,$direction) {
+    display: flex;
+    flex-direction:$direction;
+    justify-content: $justify;
+    align-items: $align;
+    @content;
+}
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@mixin equal($length){
+width:$length;
+height: $length;
+@content;
+}

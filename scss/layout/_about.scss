@@ -1,0 +1,82 @@
+section.about-section {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 80px 0;
+  background-color: #3f3531;
+  background-image: url(../img/about-us-bg.png);
+  background-repeat: no-repeat;
+  color: white;
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .img-con {
+      height: 350px;
+      flex: 1;
+      background-image: url(../img/about-video.png);
+      background-position: center;
+      margin-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      a.play-btn {
+        height: 70px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: transparent;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        outline: 3px solid #44af72;
+        .play {
+          background: #44af72;
+          height: 60px;
+          width: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          img {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+    .about-info {
+      flex: 1;
+      margin-left: 20px;
+      padding-right: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      h3 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+      .about-btn {
+        background-color: $secondaryColor;
+        color: $whiteColor;
+        font-size: 22px;
+        font-weight: normal;
+        width: 180px;
+        height: 50px;
+        border: none;
+        outline: none;
+        text-transform: uppercase;
+
+        @include flexCenter;
+      }
+    }
+  }
+}

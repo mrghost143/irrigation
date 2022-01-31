@@ -1,0 +1,112 @@
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+
+  nav {
+    width: 100%;
+    max-width: 1200px;
+    height: 85px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    &_left {
+      @include equal(60px);
+      img {
+        @include equal(60px);
+      }
+    }
+    &_right {
+      display: flex;
+      flex-direction: column;
+      margin-left: 15px;
+      strong {
+        text-align: start;
+      }
+    }
+  }
+  .navlink {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom: 5px;
+    ul {
+      display: flex;
+      li {
+        margin-right: 15px;
+        text-transform: capitalize;
+        display: flex;
+        align-items: flex-end;
+        a {
+          font-style: 14px;
+        }
+
+        .xs {
+          font-size: 11px;
+          font-weight: bold;
+        }
+        .m {
+          font-size: 14px;
+          font-weight: bold;
+        }
+        .l {
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+    }
+    .nav_top_link {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .nav_bottom_link {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 5px;
+      ul {
+        margin: 0;
+        li:not(:last-child) {
+          padding-right: 10px;
+          border-right: 1px solid gray;
+        }
+      }
+    }
+  }
+  ul.color {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      margin: 0;
+      margin: 0 3px;
+    }
+    .blue {
+      background-color: #265781;
+    }
+    .yellow {
+      background-color: #f2e162;
+    }
+    .green {
+      background-color: #52b27b;
+    }
+  }
+  .navlink ul:not(:last-child) {
+    border-right: 1px solid grey;
+    padding: 0 10px;
+  }
+  .search {
+    margin-left: 10px;
+  }
+}

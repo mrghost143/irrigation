@@ -1,0 +1,87 @@
+// h1,
+// .h1 {
+//     @include h1();
+// }
+
+// h2,
+// .h2 {
+//     @include h2();
+// }
+
+// h3,
+// .h3 {
+//     @include h3();
+// }
+
+// h4,
+// .h4 {
+//     @include h4();
+// }
+
+// h5,
+// .h5 {
+//     @include h5();
+// }
+
+// h6,
+// .h6 {
+//     @include h6();
+// }
+
+// a {
+//     color: $link-color;
+//     font-weight: 500;
+//     &:hover,
+//     &:focus {
+//         text-decoration: none;
+//         color: $primary-color-dark-blue;
+//     }
+// }
+
+// .note {
+//     @include note();
+// }
+
+// .fw-900,
+// .font-black {
+//     font-weight: 900;
+// }
+
+// .fw-700,
+// .font-bold {
+//     font-weight: 700;
+// }
+
+// .fw-500,
+// .font-medium {
+//     font-weight: 500;
+// }
+
+// .fw-300,
+// .font-light {
+//     font-weight: 300;
+// }
+
+// .fw-100,
+// .font-thin {
+//     font-weight: 100;
+// }
+
+// strong,
+// b {
+//     font-weight: 700;
+// }
+
+// .fs-16 {
+//     font-size: 1.6rem;
+// }
+
+// .fs-12 {
+//     font-size: 1.2rem;
+// }
+
+// p {
+//     &:empty {
+//         display: none;
+//     }
+// }
