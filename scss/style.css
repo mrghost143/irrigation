@@ -9,7 +9,9 @@ li {
   list-style: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -390,13 +392,13 @@ section.services .left h2 {
   text-transform: uppercase;
 }
 
-section.services .left .top {
+section.services .left .tp {
   text-align: start;
   padding-left: 100px;
   font-weight: 900;
 }
 
-section.services .left .bottom {
+section.services .left .btm {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
